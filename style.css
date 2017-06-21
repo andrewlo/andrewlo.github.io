@@ -11,3 +11,7 @@
 .social-icon path {
   fill: #fff;
 }
+
+.darken {
+  background: rgba(0,0,0,0.15);
+}
