@@ -1,6 +1,11 @@
 .hero {
   background-image: url('assets/hero-bg.jpg');
-  min-height: 225px;
+  min-height: 250px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.headline {
+  font-family: 'Montserrat', sans-serif;
 }
 
 .social-icon {
@@ -13,5 +18,13 @@
 }
 
 .darken {
-  background: rgba(0,0,0,0.15);
+  background: rgba(0,0,0,0.35);
+}
+
+.button {
+  transition: all 0.5s;
+}
+
+.button:hover {
+  color: #555;
 }
