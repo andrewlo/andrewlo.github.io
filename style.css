@@ -40,7 +40,7 @@ section > header {
   font-size: 1.5rem;
   padding-bottom: 0.5rem;
   margin-bottom: 1rem;
-  border-bottom: 1px solid rgba(0,0,0,0.25);
+  border-bottom: 1px solid #E7040F;
 }
 .subsection > header {
   font-size: 1.25rem;
