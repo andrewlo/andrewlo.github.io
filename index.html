@@ -6,21 +6,21 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.7.0/css/tachyons.min.css"/>
     <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="hero-grid.css"/>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100|Roboto:300" rel="stylesheet">
     <title>Andrew Lo</title>
   </head>
   <body class="avenir">
-    <div class="hero relative vh-40 vh-50-ns bg-center cover bg-gray">
-      <div class="pl4 pl5-ns pl6-l white absolute z-1">
-        <div class="headline pt4 pt5-ns f2 f1-ns f-subheadline-l lh-solid fw3 tracked-tight white">Andrew Lo</div>
-        <div class="f5 pt3">Hi, I'm a developer in Toronto</div>
-        <div class="pt4 flex items-center">
-          <a class="button f5 link br-pill ba bw1 ph3 pv2 dib red bg-light-gray" href="#work">
-            See my work
-          </a>
-        </div>
+    <div class="hero-grid-container">
+      <div class="hero-grid-item hero-grid-item-name flex flex-column">
+        <h1 class="headline f1 lh-solid fw3 tracked-tight">Andrew Lo</h1>
       </div>
-      <div class="darken absolute absolute--fill"></div>
+      <div class="hero-grid-item hero-grid-item-coffee"></div>
+      <div class="hero-grid-item hero-grid-item-leaf"></div>
+      <div class="hero-grid-item hero-grid-item-city"></div>
+      <div class="hero-grid-item hero-grid-item-basketball"></div>
+      <div class="hero-grid-item hero-grid-item-wings"></div>
+      <div class="hero-grid-item hero-grid-item-sunset"></div>
     </div>
 
     <section>
@@ -62,6 +62,12 @@
     </section>
     <section>
       <header id="experience">Experience</header>
+      <div class="subsection">
+        <header>Shopify</header>
+        <article>
+          <p>Front End Developer </p>
+        </article>
+      </div>
       <div class="subsection">
         <header>Rangle.io</header>
         <article>

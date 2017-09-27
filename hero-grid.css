@@ -1,0 +1,77 @@
+.hero-grid-container {
+  display: grid;
+  grid-template-columns: minmax(150px, 3fr) 2fr 2fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "header coffee basketball sunset"
+    "header coffee city city"
+    "wings leaf city city";
+  grid-gap: 20px;
+  height: 100vh;
+  padding: 1.5rem;
+}
+
+@media (min-width: 480px) and (max-width: 959px) {
+  .hero-grid-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "header coffee basketball"
+      "header coffee city"
+      "wings leaf city";
+  }
+}
+
+
+@media (max-width: 479px) {
+  .hero-grid-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "coffee"
+      "header"
+      "city";
+  }
+}
+
+.hero-grid-item.hero-grid-item-coffee {
+  grid-area: coffee;
+  background-image: url('https://burst.shopifycdn.com/photos/hot-coffee-cinemagraph.gif');
+  background-position: 15%;
+}
+
+.hero-grid-item-leaf {
+  grid-area: leaf;
+  background-image: url('https://burst.shopifycdn.com/photos/water-drops-on-leaf_925x@2x.jpg');
+}
+
+.hero-grid-item-city {
+  grid-area: city;
+  background-image: url('https://burst.shopifycdn.com/photos/CN-tower-in-fog_925x@2x.jpg');
+}
+
+.hero-grid-item-basketball {
+  grid-area: basketball;
+  background-image: url('https://burst.shopifycdn.com/photos/basketball-hoop_925x@2x.jpg');
+}
+
+.hero-grid-item-wings {
+  grid-area: wings;
+  background-image: url('https://burst.shopifycdn.com/photos/winged-wheels_925x@2x.jpg');
+}
+
+.hero-grid-item-sunset {
+  grid-area: sunset;
+  background-image: url('https://burst.shopifycdn.com/photos/city-sunset-smoke_925x@2x.jpg');
+}
+
+.hero-grid-item-name {
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-grid-item {
+  border-radius: 15px;
+  background-position: center;
+  background-size: cover;
+}
